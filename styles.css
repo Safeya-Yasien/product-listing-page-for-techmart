@@ -228,7 +228,7 @@ body {
 
   .sidebar {
     position: fixed;
-    left: -680px;
+    left: -780px;
     top: 70px;
     height: calc(100vh - 70px);
     background: #f5f5f5;
