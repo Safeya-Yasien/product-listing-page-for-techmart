@@ -53,14 +53,15 @@ body {
   border: 1px solid #2c3e50;
   border-radius: 0.5rem;
   font-size: 1rem;
-  color: #555555;
   transition: all 0.2s;
 }
 
 .search-container input:focus {
   outline: none;
-  border-color: #2c5282;
-  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+}
+
+.search-container input::placeholder {
+  color: #555555;
 }
 
 .search-button {
