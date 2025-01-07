@@ -64,6 +64,12 @@ const priceValue = document.getElementById("priceValue");
 const categoryCheckboxes = document.querySelectorAll('input[name="category"]');
 const brandCheckboxes = document.querySelectorAll('input[name="brand"]');
 
+// toggle menu visibility
+document.querySelector(".toggle-menu").addEventListener("click", function () {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("open");
+});
+
 // Render products
 function renderProducts(productsToRender) {
   productGrid.innerHTML = productsToRender
