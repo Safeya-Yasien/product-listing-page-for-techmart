@@ -66,7 +66,6 @@ function renderProducts(productsToRender) {
             <div class="product-info">
                 <h3 class="product-name">${product.name}</h3>
                 <p class="product-price">$${product.price.toFixed(2)}</p>
-                <p class="product-category">${product.category}</p>
                 <button class="add-to-cart" onclick="addToCart(${product.id})">
                     Add to Cart
                 </button>
