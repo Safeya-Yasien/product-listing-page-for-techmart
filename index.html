@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Search</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="search-bar">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search for products...">
-            <button class="search-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            </button>
-        </div>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for products..."
+        />
+        <button class="search-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <div class="layout">
-        <aside class="sidebar">
-            <div class="filter-section">
-                <h3>Categories</h3>
-                <label><input type="checkbox" name="category" value="laptops"> Laptops</label>
-                <label><input type="checkbox" name="category" value="smartphones"> Smartphones</label>
-                <label><input type="checkbox" name="category" value="tablets"> Tablets</label>
-                <label><input type="checkbox" name="category" value="accessories"> Accessories</label>
-            </div>
+      <aside class="sidebar">
+        <div class="filter-section">
+          <h3>Categories</h3>
+          <label
+            ><input type="checkbox" name="category" value="laptops" />
+            Laptops</label
+          >
+          <label
+            ><input type="checkbox" name="category" value="smartphones" />
+            Smartphones</label
+          >
+          <label
+            ><input type="checkbox" name="category" value="tablets" />
+            Tablets</label
+          >
+          <label
+            ><input type="checkbox" name="category" value="accessories" />
+            Accessories</label
+          >
+        </div>
 
-            <div class="filter-section">
-                <h3>Price Range</h3>
-                <div class="price-slider">
-                    <input type="range" id="priceRange" min="0" max="2000" step="50" value="1000">
-                    <div class="price-values">
-                        <span>$0</span>
-                        <span id="priceValue">$1000</span>
-                    </div>
-                </div>
+        <div class="filter-section">
+          <h3>Price Range</h3>
+          <div class="price-slider">
+            <input
+              type="range"
+              id="priceRange"
+              min="0"
+              max="2000"
+              step="50"
+              value="1000"
+            />
+            <div class="price-values">
+              <span>$0</span>
+              <span id="priceValue">$1000</span>
             </div>
+          </div>
+        </div>
 
-            <div class="filter-section">
-                <h3>Brands</h3>
-                <label><input type="checkbox" name="brand" value="apple"> Apple</label>
-                <label><input type="checkbox" name="brand" value="samsung"> Samsung</label>
-                <label><input type="checkbox" name="brand" value="dell"> Dell</label>
-                <label><input type="checkbox" name="brand" value="hp"> HP</label>
-            </div>
-        </aside>
+        <div class="filter-section">
+          <h3>Brands</h3>
+          <label
+            ><input type="checkbox" name="brand" value="apple" /> Apple</label
+          >
+          <label
+            ><input type="checkbox" name="brand" value="samsung" />
+            Samsung</label
+          >
+          <label
+            ><input type="checkbox" name="brand" value="dell" /> Dell</label
+          >
+          <label><input type="checkbox" name="brand" value="hp" /> HP</label>
+        </div>
+      </aside>
 
-        <main class="product-grid">
-            <!-- Products will be inserted here by JavaScript -->
-        </main>
+      <main class="product-grid">
+        <!-- Products will be inserted here by JavaScript -->
+      </main>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
